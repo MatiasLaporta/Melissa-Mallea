@@ -267,8 +267,8 @@ const cronograma = [
               El Diagnóstico
             </p>
             <h2 class="mt-5 max-w-5xl text-3xl font-bold leading-snug tracking-tight text-white sm:text-4xl lg:text-5xl">
-              El desafío del Hunter B2B moderno en la
-              <span class="text-yellow-400">era de la saturación.</span>
+              El desafío del Hunter B2B moderno<br />
+              en la <span class="text-yellow-400">era de la saturación.</span>
             </h2>
             <div class="mt-8 max-w-3xl space-y-5 text-base leading-relaxed text-slate-400 lg:text-lg">
               <p>
@@ -459,25 +459,6 @@ const cronograma = [
             </div>
           </div>
 
-          <!-- Cronograma -->
-          <div class="mt-12">
-            <h3 class="text-xs font-semibold tracking-widest uppercase">
-              <span class="text-cyan-400">Cronograma</span>
-              <span class="text-slate-400">· 8 semanas</span>
-            </h3>
-            <ol class="mt-7 space-y-0 border-l border-slate-800">
-              {
-                cronograma.map((c) => (
-                  <li class="relative pb-7 pl-7 last:pb-0">
-                    <span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-cyan-400 ring-4 ring-[#0f172a]" />
-                    <p class="text-sm font-semibold text-yellow-400">{c.semana}</p>
-                    <p class="mt-1 text-sm leading-relaxed text-slate-400">{c.hito}</p>
-                  </li>
-                ))
-              }
-            </ol>
-          </div>
-
           <!-- Métodos de pago -->
           <div class="mt-10">
             <h3 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase">
@@ -496,6 +477,25 @@ const cronograma = [
                 ))
               }
             </div>
+          </div>
+
+          <!-- Cronograma -->
+          <div class="mt-12">
+            <h3 class="text-xs font-semibold tracking-widest uppercase">
+              <span class="text-cyan-400">Cronograma</span>
+              <span class="text-slate-400">· 8 semanas</span>
+            </h3>
+            <ol class="mt-7 space-y-0 border-l border-slate-800">
+              {
+                cronograma.map((c) => (
+                  <li class="relative pb-7 pl-7 last:pb-0">
+                    <span class="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-cyan-400 ring-4 ring-[#0f172a]" />
+                    <p class="text-sm font-semibold text-yellow-400">{c.semana}</p>
+                    <p class="mt-1 text-sm leading-relaxed text-slate-400">{c.hito}</p>
+                  </li>
+                ))
+              }
+            </ol>
           </div>
 
           <!-- CTA final -->
